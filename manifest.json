@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Kite hider",
+  "version": "1.0",
+  "description": "hides sensitive data",
+
+  "icons": {
+    "16": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://*.zerodha.com/*"
+      ]
+    }
+  ]
+}
